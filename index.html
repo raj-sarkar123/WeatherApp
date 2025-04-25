@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather  App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search_box">
+                <input type="text" placeholder="Enter your location" class="input_box">
+                <button  class="fa fa-search" id="search_btn"></button>
+            </div>
+
+        </div>
+            <div class="location-not-found">
+                <h1>Sorry! Invalid location!!! </h1>
+                <img src="/404.png" alt="404 Error">
+            </div>
+
+
+
+        <div class="weather_body">
+            <img src="/cloud.png" alt="weather Image" class="weather_image">
+            <div class="weather_box">
+                <p class="temperature">0  <sup>°C </sup> </p>
+            <p class="description">Weather</p>
+            </div>
+           
+        <div class="weather_details">
+            <div class="humidity">
+                <i class="fa fa-tint" aria-hidden="true"></i>
+                <div class="text">
+                    <span id="humidity">0%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind_speed">
+                <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+                <div class="text">
+                    <span id="wind_speed">0km/H</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
